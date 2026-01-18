@@ -1,0 +1,26 @@
+{
+  "Input": [
+    {
+      "ItemId": "Plant_Seeds_Corn",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {},
+  "Output": [
+    {
+      "ItemId": "Plant_Crop_Corn_Item",
+      "Quantity": 2
+    },
+    {
+      "ItemId": "Ingredient_Life_Essence",
+      "Quantity": 3
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Id": "GardenCloche",
+      "Type": "Processing"
+    }
+  ],
+  "TimeSeconds": 60
+}

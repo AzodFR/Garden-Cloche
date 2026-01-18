@@ -1,0 +1,26 @@
+{
+  "Input": [
+    {
+      "ItemId": "Plant_Seeds_Lettuce",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {},
+  "Output": [
+    {
+      "ItemId": "Plant_Crop_Lettuce_Item",
+      "Quantity": 1
+    },
+    {
+      "ItemId": "Ingredient_Life_Essence",
+      "Quantity": 2
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Id": "GardenCloche",
+      "Type": "Processing"
+    }
+  ],
+  "TimeSeconds": 60
+}

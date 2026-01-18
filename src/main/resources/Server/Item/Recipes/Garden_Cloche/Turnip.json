@@ -1,0 +1,26 @@
+{
+  "Input": [
+    {
+      "ItemId": "Plant_Seeds_Turnip",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {},
+  "Output": [
+    {
+      "ItemId": "Plant_Crop_Turnip_Item",
+      "Quantity": 1
+    },
+    {
+      "ItemId": "Ingredient_Life_Essence",
+      "Quantity": 4
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Id": "GardenCloche",
+      "Type": "Processing"
+    }
+  ],
+  "TimeSeconds": 60
+}

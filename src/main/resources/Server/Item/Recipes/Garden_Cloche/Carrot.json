@@ -1,0 +1,26 @@
+{
+  "Input": [
+    {
+      "ItemId": "Plant_Seeds_Carrot",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {},
+  "Output": [
+    {
+      "ItemId": "Plant_Crop_Carrot_Item",
+      "Quantity": 1
+    },
+    {
+      "ItemId": "Ingredient_Life_Essence",
+      "Quantity": 3
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Id": "GardenCloche",
+      "Type": "Processing"
+    }
+  ],
+  "TimeSeconds": 60
+}

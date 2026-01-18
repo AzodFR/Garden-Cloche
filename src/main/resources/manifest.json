@@ -1,0 +1,21 @@
+{
+    "Group": "Azod",
+    "Name": "GardenCloche",
+    "Version": "1.0.0",
+    "Description": "An easy way to make your seeds grow",
+    "Authors": [
+        {
+            "Name": "azod"
+        }
+    ],
+    "Website": "https://legacy.curseforge.com/hytale/mods/garden-cloche",
+    "ServerVersion": "*",
+    "Dependencies": {
+        
+    },
+    "OptionalDependencies": {
+        
+    },
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true
+}

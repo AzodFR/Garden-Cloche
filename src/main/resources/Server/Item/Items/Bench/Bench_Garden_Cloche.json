@@ -1,0 +1,159 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Bench_Garden_Cloche.name",
+    "Description": "server.items.Bench_Garden_Cloche.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Bench_Garden_Cloche.png",
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Semitransparent",
+    "CustomModel": "Blocks/Garden_Cloche/Garden_Cloche.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Garden_Cloche/Garden_Cloche_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Statue_Small",
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Processing",
+      "Input": [
+        {
+          "FilterValidIngredients": true
+        }
+      ],
+      "OutputSlotsCount": 2,
+      "LocalOpenSoundEventId": "SFX_Lumbermill_Bench_Open",
+      "LocalCloseSoundEventId": "SFX_Lumbermill_Bench_Close",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "Id": "GardenCloche",
+      "TierLevels": [
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Furniture_Crude_Chest_Small",
+                "Quantity": 2
+              },
+              {
+                "ItemId": "*Tool_Watering_Can_State_Filled_Water",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Life_Essence_Concentrated",
+                "Quantity": 10
+              }
+            ],
+            "TimeSeconds": 3
+          }
+        },
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Furniture_Crude_Chest_Small",
+                "Quantity": 2
+              },
+              {
+                "ItemId": "Tool_Fertilizer",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Life_Essence_Concentrated",
+                "Quantity": 15
+              }
+            ],
+            "TimeSeconds": 3
+          },
+          "CraftingTimeReductionModifier": 0.33,
+          "ExtraOutputSlot": 2
+        },
+        {
+          "CraftingTimeReductionModifier": 0.66,
+          "ExtraOutputSlot": 4
+        }
+      ]
+    },
+    "State": {
+      "Id": "processingBench",
+      "Definitions": {
+        "Processing": {
+          "Looping": true,
+          "CustomModelAnimation": "Blocks/Garden_Cloche/Seed_Growing.blockyanim"
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#63422b",
+    "BlockSoundSetId": "Wood",
+    "Interactions": {
+      "Use": "Open_Processing_Bench"
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      1,
+      -25
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "Recipe": {
+    "TimeSeconds": 3,
+    "Input": [
+      {
+        "Quantity": 6,
+        "ResourceTypeId": "Wood_Trunk"
+      },
+      {
+        "Quantity": 3,
+        "ItemId": "Soil_Dirt"
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence_Concentrated",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Farmingbench",
+        "Type": "Crafting",
+        "RequiredTierLevel": 3,
+        "Categories": [
+          "Farming"
+        ]
+      }
+    ]
+  },
+  "MaxStack": 25,
+  "ItemLevel": 3,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}
